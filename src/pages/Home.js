@@ -33,11 +33,11 @@ const Home = () => {
 
     return (
         <div className='mt-8'>
-            <div className='flex items-center justify-between mr-5 ml-5 mb-8 mt-8'>
+            <div className='flex items-center justify-between mr-6 ml-6 mb-8 mt-8'>
                 <h1 className='text-3xl font-bold mb-4 mt-4'>
                     Employees
                 </h1>
-                <div className='flex items-center space-x-8 mr-10'>
+                <div className='flex items-center space-x-8'>
                     <FaFilter className='text-red-700'/>
                     <select value={selectedCountry} onChange={e => setselectedCountry(e.target.value)} className='py-1 px-1 border rounded-md'>
                         <option value="">Country</option>
@@ -53,7 +53,7 @@ const Home = () => {
                     </select>
                 </div>
             </div>
-            <div className='overflow-x-auto mx-8'>
+            <div className='overflow-x-auto mx-6'>
                 <table className='min-w-full border-collapse border border-gray-300 rounded-lg'>
                     <thead>
                         <tr className='text-left'>
